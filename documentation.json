@@ -150,5 +150,8 @@
         ]
       }
     ]
-  }
+  },
+  "logo-dark": "https://blob-cdn.documentation.ai/org-710bc5ea-d393-446c-987f-d3991f27ebd7/doc-c347c942-5638-43d9-91c3-b0e2e4bddd0b/1772464349847-z3h61nthr9-Expand-Isotipo-SQ-Blanco.svg?q=85&fm=auto&auto=compress%2Cformat",
+  "logo-light": "https://blob-cdn.documentation.ai/org-710bc5ea-d393-446c-987f-d3991f27ebd7/doc-c347c942-5638-43d9-91c3-b0e2e4bddd0b/1772464379855-1qpz73vx618-Expand-Isotipo-SQ.svg?q=85&fm=auto&auto=compress%2Cformat",
+  "favicon": "https://blob-cdn.documentation.ai/org-710bc5ea-d393-446c-987f-d3991f27ebd7/doc-c347c942-5638-43d9-91c3-b0e2e4bddd0b/1772464379855-1qpz73vx618-Expand-Isotipo-SQ.svg?q=85&fm=auto&auto=compress%2Cformat"
 }
