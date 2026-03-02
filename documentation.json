@@ -1,5 +1,5 @@
 {
-  "name": "Starter Kit",
+  "name": "Ayuda Expand",
   "colors": {
     "light": {
       "brand": "#F97316"
@@ -146,6 +146,23 @@
             "title": "Changelog",
             "path": "changelog",
             "icon": "history"
+          }
+        ]
+      },
+      {
+        "tab": "Guías",
+        "icon": "circle-help-icon",
+        "groups": [
+          {
+            "group": "Guía Rápida",
+            "icon": "zap-icon",
+            "pages": [
+              {
+                "title": "Guía de inicio rápido para usuarios corporativos",
+                "path": "guia-rapida-usuarios-corporativos",
+                "icon": "briefcase-business-icon"
+              }
+            ]
           }
         ]
       }
