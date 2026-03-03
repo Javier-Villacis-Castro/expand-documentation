@@ -34,21 +34,6 @@
             "group": "Guías",
             "pages": [
               {
-                "title": "Como configurar un dominio personalizado",
-                "path": "centro-ayuda/guias/guia/configurar-dominio-personalizado",
-                "icon": "laptop"
-              },
-              {
-                "title": "Como agregar el link de tu perfil en la firma de correo electrónico",
-                "path": "centro-ayuda/guias/guia/link-perfil-correo-electrnico",
-                "icon": "lucide-mail"
-              },
-              {
-                "title": "Como crear un acceso directo a mi tarjeta en mi teléfono",
-                "path": "centro-ayuda/guias/guia/acceso-directo-telefono",
-                "icon": "smartphone-icon"
-              },
-              {
                 "title": "Como recopilar datos de visitantes",
                 "path": "centro-ayuda/guias/guia/recopilar-datos-visitantes",
                 "icon": "magnet-icon"
@@ -57,6 +42,21 @@
                 "title": "Como usar billeteras digitales",
                 "path": "centro-ayuda/guias/guia/billeteras-digitales",
                 "icon": "wallet2-icon"
+              },
+              {
+                "title": "Como crear un acceso directo a mi tarjeta en mi teléfono",
+                "path": "centro-ayuda/guias/guia/acceso-directo-telefono",
+                "icon": "smartphone-icon"
+              },
+              {
+                "title": "Como agregar el link de tu perfil en la firma de correo electrónico",
+                "path": "centro-ayuda/guias/guia/link-perfil-correo-electrnico",
+                "icon": "lucide-mail"
+              },
+              {
+                "title": "Como configurar un dominio personalizado",
+                "path": "centro-ayuda/guias/guia/configurar-dominio-personalizado",
+                "icon": "laptop"
               }
             ],
             "icon": "compass-icon"

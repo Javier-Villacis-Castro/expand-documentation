@@ -1,24 +1,23 @@
 ---
-title: "Dominios personalizados para perfiles en Expand"
-description: "Aprende cómo configurar un dominio personalizado para que los perfiles de Expand utilicen la URL corporativa de tu empresa mediante CNAME."
-type: "guide"
+title: Dominios personalizados para perfiles en Expand
+description: >-
+  Aprende cómo configurar un dominio personalizado para que los perfiles de
+  Expand utilicen la URL corporativa de tu empresa mediante CNAME.
+type: guide
 ---
-
 ## Descripción general
 
 Esta guía explica cómo configurar un dominio personalizado para que tus perfiles de **Expand** utilicen la URL de tu empresa.
 
 En lugar de usar una dirección estándar como:
 
-```text
 expand.cards/usuario
-```
 
 Podrás utilizar una estructura como:
 
-```text
-swft.tudominio.com/usuario
-```
+expand.tudominio.com/usuario
+
+
 
 Al finalizar, tus perfiles estarán disponibles bajo tu propio dominio corporativo.
 
@@ -29,8 +28,11 @@ Al finalizar, tus perfiles estarán disponibles bajo tu propio dominio corporati
 Configurar un dominio personalizado te permite:
 
 - Reforzar la identidad de tu marca.
+
 - Generar mayor confianza y credibilidad.
+
 - Mantener coherencia en todos tus canales digitales.
+
 - Compartir enlaces más profesionales en QR, tarjetas NFC, correo electrónico y redes sociales.
 
 ---
@@ -40,11 +42,13 @@ Configurar un dominio personalizado te permite:
 Asegúrate de:
 
 - Tener acceso a la configuración DNS de tu dominio.
+
 - Contar con permisos administrativos (si gestionas una cuenta empresarial).
+
 - Poder crear registros CNAME en tu proveedor de hosting.
 
-<Callout kind="info">
-Si no tienes acceso a DNS, contacta a tu equipo de TI o proveedor de hosting antes de continuar.
+<Callout kind="info" collapsed="false">
+  Si no tienes acceso a DNS, contacta a tu equipo de TI o proveedor de hosting antes de continuar.
 </Callout>
 
 ---
@@ -57,9 +61,7 @@ Si no tienes acceso a DNS, contacta a tu equipo de TI o proveedor de hosting ant
   <Step title="Accede a configuración" icon="settings" title-type="p">
     Ingresa a:
 
-    ```text
-    https://expand.cards/myprofile/settings
-    ```
+    <a href="https://expand.cards/myprofile/settings" target="_blank" rel="noopener noreferrer">https\://expand.cards/myprofile/settings</a>
   </Step>
 
   <Step title="Entra a Advanced" icon="sliders" title-type="p">
@@ -81,9 +83,7 @@ Si no tienes acceso a DNS, contacta a tu equipo de TI o proveedor de hosting ant
   <Step title="Accede al panel de administrador" icon="shield" title-type="p">
     Ingresa a:
 
-    ```text
-    https://expand.cards/admin/settings/customdomain
-    ```
+    <a href="https://expand.cards/admin/settings/customdomain" target="_blank" rel="noopener noreferrer">https\://expand.cards/admin/settings/customdomain</a>
   </Step>
 
   <Step title="Ingresa el dominio" icon="link" title-type="p">
@@ -95,8 +95,8 @@ Si no tienes acceso a DNS, contacta a tu equipo de TI o proveedor de hosting ant
   </Step>
 </Steps>
 
-<Callout kind="tip">
-El subdominio puede ser cualquier palabra relevante, por ejemplo: contact, connect o vcard.
+<Callout kind="tip" collapsed="false">
+  El subdominio puede ser cualquier palabra relevante, por ejemplo: contact, connect o vcard.
 </Callout>
 
 ---
@@ -105,7 +105,8 @@ El subdominio puede ser cualquier palabra relevante, por ejemplo: contact, conne
 
 Después de registrar el dominio en Expand, el sistema te proporcionará un registro CNAME con una estructura similar a:
 
-- **Host / Nombre:** el subdominio elegido (por ejemplo: swft, contact, connect).
+- **Host / Nombre:** el subdominio elegido (por ejemplo: expand, contact).
+
 - **Apunta a / Valor:** customdomain.expand.cards
 
 ### Cómo configurarlo
@@ -136,8 +137,8 @@ Después de registrar el dominio en Expand, el sistema te proporcionará un regi
 
 ## Consideración especial para Cloudflare
 
-<Callout kind="alert">
-Si utilizas Cloudflare, desactiva la opción **Proxied** y asegúrate de que el registro esté configurado como **DNS Only**.
+<Callout kind="alert" collapsed="false">
+  Si utilizas Cloudflare, desactiva la opción **Proxied** y asegúrate de que el registro esté configurado como **DNS Only**.
 </Callout>
 
 ---
@@ -166,8 +167,8 @@ Durante este tiempo, el dominio puede no estar disponible inmediatamente.
   </Step>
 </Steps>
 
-<Callout kind="success">
-Resultado esperado: tu perfil carga correctamente bajo tu dominio corporativo.
+<Callout kind="success" collapsed="false">
+  Resultado esperado: tu perfil carga correctamente bajo tu dominio corporativo.
 </Callout>
 
 ---
@@ -176,10 +177,13 @@ Resultado esperado: tu perfil carga correctamente bajo tu dominio corporativo.
 
 Algunos proveedores comunes:
 
-- Namecheap
-- GoDaddy
-- SiteGround
-- Cloudflare
+- <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9646/2237/how-to-create-a-cname-record-for-your-domain/" target="_blank" rel="noopener noreferrer">Namecheap</a>
+
+- <a href="https://www.godaddy.com/en-uk/help/add-a-cname-record-19236" target="_blank" rel="noopener noreferrer">GoDaddy</a>
+
+- <a href="https://www.siteground.com/kb/manage-dns-records/#CNAME_record_settings" target="_blank" rel="noopener noreferrer">SiteGround</a>
+
+- <a href="https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-subdomain/" target="_blank" rel="noopener noreferrer">Cloudflare</a>
 
 Consulta la documentación oficial de tu proveedor si necesitas instrucciones específicas.
 
@@ -190,13 +194,16 @@ Consulta la documentación oficial de tu proveedor si necesitas instrucciones es
 Si tu dominio no carga después de 24 horas:
 
 - Verifica que el CNAME esté correctamente configurado.
+
 - Confirma que el registro no esté en modo Proxied (si usas Cloudflare).
+
 - Asegúrate de que no exista un registro A o CNAME conflictivo para el mismo subdominio.
 
 ---
 
 ## Soporte
 
-<Callout kind="tip">
-Si necesitas ayuda adicional, utiliza el chat dentro de la plataforma o escribe a: support@funnel.space
+<Callout kind="tip" collapsed="false">
+  Si necesitas ayuda adicional, utiliza el chat dentro de la plataforma o escribe a: [support@funnel.space](mailto:support@funnel.space)
 </Callout>
+
