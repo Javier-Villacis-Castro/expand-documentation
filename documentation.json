@@ -9,190 +9,57 @@
     }
   },
   "navigation": {
-    "languages": [
+    "tabs": [
       {
-        "language": "Español",
-        "tabs": [
+        "tab": "Centro de Ayuda",
+        "icon": "circle-help-icon",
+        "groups": [
           {
-            "tab": "Documentation",
-            "icon": "book",
-            "groups": [
-              {
-                "group": "Start Here",
-                "icon": "rocket",
-                "pages": [
-                  {
-                    "title": "Introduction",
-                    "path": "introduction",
-                    "icon": "home"
-                  },
-                  {
-                    "title": "Quickstart",
-                    "path": "quickstart",
-                    "icon": "zap"
-                  },
-                  {
-                    "title": "Components",
-                    "path": "components",
-                    "icon": "code"
-                  }
-                ]
-              },
-              {
-                "group": "Components",
-                "icon": "layers",
-                "pages": [
-                  {
-                    "title": "Images",
-                    "path": "components/images",
-                    "icon": "image"
-                  },
-                  {
-                    "title": "Cards",
-                    "path": "components/cards",
-                    "icon": "square"
-                  },
-                  {
-                    "title": "Code",
-                    "path": "components/code",
-                    "icon": "code"
-                  },
-                  {
-                    "title": "Callouts",
-                    "path": "components/callouts",
-                    "icon": "message-square"
-                  },
-                  {
-                    "title": "Steps",
-                    "path": "components/steps",
-                    "icon": "list-ordered"
-                  },
-                  {
-                    "title": "Tabs",
-                    "path": "components/tabs",
-                    "icon": "columns"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "API Reference",
-            "icon": "code",
-            "groups": [
-              {
-                "group": "Overview",
-                "icon": "file-text",
-                "pages": [
-                  {
-                    "title": "Authentication",
-                    "path": "authentication",
-                    "icon": "lock"
-                  }
-                ]
-              },
-              {
-                "group": "Sample Endpoints",
-                "openapi": "openapi.yaml"
-              }
-            ]
-          },
-          {
-            "tab": "Help Center",
-            "icon": "help-circle",
+            "group": "Guías Rápidas",
+            "icon": "zap-icon",
             "pages": [
               {
-                "title": "Help Center",
-                "path": "help-center",
-                "icon": "home"
+                "title": "Guía rápida usuarios individuales",
+                "path": "centro-ayuda/guias/guia-rapida/guia-rapida-usuarios-individuales",
+                "icon": "lucide-user2"
               },
               {
-                "group": "FAQs",
-                "icon": "help-circle",
-                "expandable": false,
-                "pages": [
-                  {
-                    "title": "Documentation Source",
-                    "path": "help-center/faq/getting-started"
-                  }
-                ]
-              },
-              {
-                "group": "Troubleshooting",
-                "icon": "alert-triangle",
-                "expandable": false,
-                "pages": [
-                  {
-                    "title": "Page Missing in Sidebar",
-                    "path": "help-center/troubleshooting/install-error"
-                  }
-                ]
-              },
-              {
-                "group": "Guides",
-                "icon": "book-open",
-                "expandable": false,
-                "pages": [
-                  {
-                    "title": "Create Your First Page",
-                    "path": "help-center/guides/setup-project"
-                  }
-                ]
+                "title": "Guía rápida usuarios corporativos",
+                "path": "centro-ayuda/guias/guia-rapida/guia-rapida-usuarios-corporativos",
+                "icon": "briefcase-business-icon"
               }
             ]
           },
           {
-            "tab": "Centro de Ayuda",
-            "icon": "circle-help-icon",
-            "groups": [
+            "group": "Guías",
+            "pages": [
               {
-                "group": "Guías Rápidas",
-                "icon": "zap-icon",
-                "pages": [
-                  {
-                    "title": "Guía rápida usuarios individuales",
-                    "path": "guia-rapida-usuarios-individuales",
-                    "icon": "lucide-user2"
-                  },
-                  {
-                    "title": "Guía rápida usuarios corporativos",
-                    "path": "guia-rapida-usuarios-corporativos",
-                    "icon": "briefcase-business-icon"
-                  }
-                ]
+                "title": "Como configurar un dominio personalizado",
+                "path": "centro-ayuda/guias/guia/configurar-dominio-personalizado",
+                "icon": "laptop"
               },
               {
-                "group": "Guías",
-                "pages": [
-                  {
-                    "title": "Como configurar un dominio personalizado",
-                    "path": "configurar-dominio-personalizado",
-                    "icon": "laptop"
-                  },
-                  {
-                    "title": "Como agregar el link de tu perfil en la firma de correo electrónico",
-                    "path": "link-perfil-correo-electrnico",
-                    "icon": "lucide-mail"
-                  },
-                  {
-                    "title": "Como crear un acceso directo a mi tarjeta en mi teléfono",
-                    "path": "acceso-directo-telefono",
-                    "icon": "smartphone-icon"
-                  },
-                  {
-                    "title": "Como recopilar datos de visitantes",
-                    "path": "recopilar-datos-visitantes",
-                    "icon": "magnet-icon"
-                  },
-                  {
-                    "title": "Como usar billeteras digitales",
-                    "path": "billeteras-digitales",
-                    "icon": "wallet2-icon"
-                  }
-                ],
-                "icon": "compass-icon"
+                "title": "Como agregar el link de tu perfil en la firma de correo electrónico",
+                "path": "centro-ayuda/guias/guia/link-perfil-correo-electrnico",
+                "icon": "lucide-mail"
+              },
+              {
+                "title": "Como crear un acceso directo a mi tarjeta en mi teléfono",
+                "path": "centro-ayuda/guias/guia/acceso-directo-telefono",
+                "icon": "smartphone-icon"
+              },
+              {
+                "title": "Como recopilar datos de visitantes",
+                "path": "centro-ayuda/guias/guia/recopilar-datos-visitantes",
+                "icon": "magnet-icon"
+              },
+              {
+                "title": "Como usar billeteras digitales",
+                "path": "centro-ayuda/guias/guia/billeteras-digitales",
+                "icon": "wallet2-icon"
               }
-            ]
+            ],
+            "icon": "compass-icon"
           }
         ]
       }
