@@ -1,17 +1,17 @@
 ---
-title: "Dominios personalizados para perfiles en Swft Connect"
-description: "Aprende cómo configurar un dominio personalizado para que los perfiles de Swft Connect utilicen la URL corporativa de tu empresa mediante CNAME."
+title: "Dominios personalizados para perfiles en Expand"
+description: "Aprende cómo configurar un dominio personalizado para que los perfiles de Expand utilicen la URL corporativa de tu empresa mediante CNAME."
 type: "guide"
 ---
 
 ## Descripción general
 
-Esta guía explica cómo configurar un dominio personalizado para que tus perfiles de **Swft Connect** utilicen la URL de tu empresa.
+Esta guía explica cómo configurar un dominio personalizado para que tus perfiles de **Expand** utilicen la URL de tu empresa.
 
 En lugar de usar una dirección estándar como:
 
 ```text
-swft.id/usuario
+expand.cards/usuario
 ```
 
 Podrás utilizar una estructura como:
@@ -49,7 +49,7 @@ Si no tienes acceso a DNS, contacta a tu equipo de TI o proveedor de hosting ant
 
 ---
 
-## Paso 1: Registrar el dominio en Swft Connect
+## Paso 1: Registrar el dominio en Expand
 
 ### Para usuarios individuales
 
@@ -58,7 +58,7 @@ Si no tienes acceso a DNS, contacta a tu equipo de TI o proveedor de hosting ant
     Ingresa a:
 
     ```text
-    https://swft.id/myprofile/settings
+    https://expand.cards/myprofile/settings
     ```
   </Step>
 
@@ -82,7 +82,7 @@ Si no tienes acceso a DNS, contacta a tu equipo de TI o proveedor de hosting ant
     Ingresa a:
 
     ```text
-    https://swft.id/admin/settings/customdomain
+    https://expand.cards/admin/settings/customdomain
     ```
   </Step>
 
@@ -103,10 +103,10 @@ El subdominio puede ser cualquier palabra relevante, por ejemplo: contact, conne
 
 ## Paso 2: Configurar el registro CNAME en tu DNS
 
-Después de registrar el dominio en Swft Connect, el sistema te proporcionará un registro CNAME con una estructura similar a:
+Después de registrar el dominio en Expand, el sistema te proporcionará un registro CNAME con una estructura similar a:
 
 - **Host / Nombre:** el subdominio elegido (por ejemplo: swft, contact, connect).
-- **Apunta a / Valor:** customdomain.swft.id
+- **Apunta a / Valor:** customdomain.expand.cards
 
 ### Cómo configurarlo
 
@@ -124,7 +124,7 @@ Después de registrar el dominio en Swft Connect, el sistema te proporcionará u
   </Step>
 
   <Step title="Completa los datos" icon="edit" title-type="p">
-    Completa los campos con la información proporcionada por Swft Connect.
+    Completa los campos con la información proporcionada por Expand.
   </Step>
 
   <Step title="Guarda los cambios" icon="save" title-type="p">
@@ -198,5 +198,5 @@ Si tu dominio no carga después de 24 horas:
 ## Soporte
 
 <Callout kind="tip">
-Si necesitas ayuda adicional, utiliza el chat dentro de la plataforma o escribe a: support@swftconnect.com
+Si necesitas ayuda adicional, utiliza el chat dentro de la plataforma o escribe a: support@funnel.space
 </Callout>
