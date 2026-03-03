@@ -1,0 +1,202 @@
+---
+title: "Dominios personalizados para perfiles en Swft Connect"
+description: "Aprende cómo configurar un dominio personalizado para que los perfiles de Swft Connect utilicen la URL corporativa de tu empresa mediante CNAME."
+type: "guide"
+---
+
+## Descripción general
+
+Esta guía explica cómo configurar un dominio personalizado para que tus perfiles de **Swft Connect** utilicen la URL de tu empresa.
+
+En lugar de usar una dirección estándar como:
+
+```text
+swft.id/usuario
+```
+
+Podrás utilizar una estructura como:
+
+```text
+swft.tudominio.com/usuario
+```
+
+Al finalizar, tus perfiles estarán disponibles bajo tu propio dominio corporativo.
+
+---
+
+## Beneficios de usar un dominio personalizado
+
+Configurar un dominio personalizado te permite:
+
+- Reforzar la identidad de tu marca.
+- Generar mayor confianza y credibilidad.
+- Mantener coherencia en todos tus canales digitales.
+- Compartir enlaces más profesionales en QR, tarjetas NFC, correo electrónico y redes sociales.
+
+---
+
+## Antes de comenzar
+
+Asegúrate de:
+
+- Tener acceso a la configuración DNS de tu dominio.
+- Contar con permisos administrativos (si gestionas una cuenta empresarial).
+- Poder crear registros CNAME en tu proveedor de hosting.
+
+<Callout kind="info">
+Si no tienes acceso a DNS, contacta a tu equipo de TI o proveedor de hosting antes de continuar.
+</Callout>
+
+---
+
+## Paso 1: Registrar el dominio en Swft Connect
+
+### Para usuarios individuales
+
+<Steps>
+  <Step title="Accede a configuración" icon="settings" title-type="p">
+    Ingresa a:
+
+    ```text
+    https://swft.id/myprofile/settings
+    ```
+  </Step>
+
+  <Step title="Entra a Advanced" icon="sliders" title-type="p">
+    Ve a la sección **Advanced** dentro de la configuración.
+  </Step>
+
+  <Step title="Agrega el subdominio" icon="link" title-type="p">
+    Ingresa el subdominio que deseas usar (por ejemplo: swft.tudominio.com).
+  </Step>
+
+  <Step title="Confirma" icon="check-circle" title-type="p">
+    Haz clic en **Add Domain**.
+  </Step>
+</Steps>
+
+### Para administradores de empresa
+
+<Steps>
+  <Step title="Accede al panel de administrador" icon="shield" title-type="p">
+    Ingresa a:
+
+    ```text
+    https://swft.id/admin/settings/customdomain
+    ```
+  </Step>
+
+  <Step title="Ingresa el dominio" icon="link" title-type="p">
+    Escribe el dominio o subdominio que deseas utilizar.
+  </Step>
+
+  <Step title="Agrega el dominio" icon="check-circle" title-type="p">
+    Haz clic en **Add Domain**.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+El subdominio puede ser cualquier palabra relevante, por ejemplo: contact, connect o vcard.
+</Callout>
+
+---
+
+## Paso 2: Configurar el registro CNAME en tu DNS
+
+Después de registrar el dominio en Swft Connect, el sistema te proporcionará un registro CNAME con una estructura similar a:
+
+- **Host / Nombre:** el subdominio elegido (por ejemplo: swft, contact, connect).
+- **Apunta a / Valor:** customdomain.swft.id
+
+### Cómo configurarlo
+
+<Steps>
+  <Step title="Accede a tu proveedor de dominio" icon="globe" title-type="p">
+    Ingresa al panel de administración de tu proveedor de dominio o hosting.
+  </Step>
+
+  <Step title="Abre la sección DNS" icon="server" title-type="p">
+    Ve a la sección de administración DNS.
+  </Step>
+
+  <Step title="Crea un registro CNAME" icon="plus-square" title-type="p">
+    Crea un nuevo registro **CNAME**.
+  </Step>
+
+  <Step title="Completa los datos" icon="edit" title-type="p">
+    Completa los campos con la información proporcionada por Swft Connect.
+  </Step>
+
+  <Step title="Guarda los cambios" icon="save" title-type="p">
+    Guarda la configuración.
+  </Step>
+</Steps>
+
+---
+
+## Consideración especial para Cloudflare
+
+<Callout kind="alert">
+Si utilizas Cloudflare, desactiva la opción **Proxied** y asegúrate de que el registro esté configurado como **DNS Only**.
+</Callout>
+
+---
+
+## Tiempo de propagación
+
+La propagación del DNS puede tardar hasta 24 horas.
+
+Durante este tiempo, el dominio puede no estar disponible inmediatamente.
+
+---
+
+## Verificación
+
+<Steps>
+  <Step title="Espera la propagación" icon="clock" title-type="p">
+    Espera hasta 24 horas para que el DNS se propague correctamente.
+  </Step>
+
+  <Step title="Prueba el dominio" icon="globe" title-type="p">
+    Ingresa tu nuevo dominio en el navegador.
+  </Step>
+
+  <Step title="Confirma que carga correctamente" icon="check-circle" title-type="p">
+    Verifica que tu perfil se muestra usando tu dominio personalizado.
+  </Step>
+</Steps>
+
+<Callout kind="success">
+Resultado esperado: tu perfil carga correctamente bajo tu dominio corporativo.
+</Callout>
+
+---
+
+## Recursos útiles para configurar DNS
+
+Algunos proveedores comunes:
+
+- Namecheap
+- GoDaddy
+- SiteGround
+- Cloudflare
+
+Consulta la documentación oficial de tu proveedor si necesitas instrucciones específicas.
+
+---
+
+## Resolución de problemas
+
+Si tu dominio no carga después de 24 horas:
+
+- Verifica que el CNAME esté correctamente configurado.
+- Confirma que el registro no esté en modo Proxied (si usas Cloudflare).
+- Asegúrate de que no exista un registro A o CNAME conflictivo para el mismo subdominio.
+
+---
+
+## Soporte
+
+<Callout kind="tip">
+Si necesitas ayuda adicional, utiliza el chat dentro de la plataforma o escribe a: support@swftconnect.com
+</Callout>
